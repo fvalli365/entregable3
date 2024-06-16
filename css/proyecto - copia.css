@@ -1,0 +1,337 @@
+
+/* ACLARACIONES:
+   Las dos páginas que son responsive en mobile son:
+   Inicio (index.html)
+   Links (links.html)
+
+   Son responsive para un ancho menor a 576px (sm de bootstrap)
+
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+  }
+
+p {
+    text-align : center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;  
+    border-bottom: none; 
+}
+
+.texto_juegos {
+  margin-top: 10px;
+} 
+
+.texto_index {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+  margin: auto;
+  width: 840px;
+  color: blue;
+} 
+
+.link_index {
+  color: magenta;
+} 
+
+.texto_index_cont {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.contenedor_index {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.espec_cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;  
+}
+
+.list_espec {
+  padding-top: 50px;
+  list-style-type: none;
+  width: 640px;
+}
+
+.list_1 {
+  background-color: #b3b3cc;
+}
+
+.list_2 {
+  background-color: #f0f0f5;
+}
+
+.list_3 {
+  background-color: #d1b3ff;
+  background-image: linear-gradient(to left, red, yellow, green, cyan);
+}
+
+
+.texto_emul {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+  margin: auto;
+  width: 840px;
+  color: blue;
+} 
+
+.texto_emul_cont {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.emul_cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;  
+}
+
+.emul_img {
+  margin-left: 50px;
+}
+
+.prog_cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;  
+}
+
+.prog_img {
+  margin-left: 50px;
+}
+
+.texto_prog {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+  margin: auto;
+  width: 840px;
+  color: blue;
+} 
+
+.texto_jue {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+  margin: auto;
+  width: 840px;
+  color: blue;
+} 
+
+.nombre_jue {
+  color: magenta;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  row-gap: 10px;
+}
+
+.item1 { grid-row: 1/2;
+  grid-column: 1/2; 
+}
+.item2 { grid-row: 1/2;
+  grid-column: 2/3;
+}
+.item3 { grid-row: 1/2;
+  grid-column: 3/4;
+}
+
+.item4 { grid-row: 2/3;
+  grid-column: 1/2;
+}
+.item5 { grid-row: 2/3;
+  grid-column: 2/3;
+}
+.item6 { grid-row: 2/3;
+  grid-column: 3/4;
+}
+      
+
+.item7 { grid-row: 3/4;
+  grid-column: 1/2;
+}
+.item8 { grid-row: 3/4;
+  grid-column: 2/3;
+}
+.item9 { grid-row: 3/4;
+  grid-column: 3/4;
+}
+ 
+.item10 { grid-row: 4/5;
+  grid-column: 1/2;
+}
+
+.footer_class {
+  margin-top: 10px;
+}
+
+.textos_esp {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+
+@media only screen and (max-width : 420px) {
+
+  .texto_index {
+    width: 410px;
+    padding-left: 10px;
+    padding-right: 10px;
+  } 
+
+  .contenedor_index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .imagen1 {
+    width: 60%;
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .imagen2 {
+    width: 80%;
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .espec_cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;  
+  }
+  
+  .list_espec {
+    padding-top: 50px;
+    list-style-type: none;
+    width: 410px;
+    margin-right: 50px;
+  }
+
+  .imag_esp {
+    text-align: center;
+  }
+
+  .texto_emul {
+    width: 410px;
+    padding-left: 10px;
+    padding-right: 10px;
+  } 
+
+  .emul_cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;  
+  }
+
+  .prog_cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;  
+  }
+
+  .texto_prog {
+    width: 410px;
+    padding-left: 10px;
+    padding-right: 10px;
+  } 
+
+  .texto_jue {
+    width: 410px;
+    padding-left: 10px;
+    padding-right: 10px;
+  } 
+
+    /* GRILLA JUEGOS */
+
+  .texto_jue {
+      width: 410px;
+  } 
+
+  .contenedor {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: repeat(5,auto);
+      row-gap: 10px;
+  }
+
+  .item1 {
+      grid-column: 1/2;
+      grid-row: 1/2;
+  }
+  .item2 {
+      grid-column: 1/2;
+      grid-row: 2/3;
+  }
+  .item3 {
+      grid-column: 1/2;
+      grid-row: 3/4;
+  }
+  .item4 {
+      grid-column: 1/2;
+      grid-row: 4/5;
+  }
+  .item5 {
+      grid-column: 1/2;
+      grid-row: 5/6;
+  }
+  .item6 {
+      grid-column: 1/2;
+      grid-row: 6/7;
+  }
+  .item7 {
+      grid-column: 1/2;
+      grid-row: 7/8;
+  }
+  .item8 {
+      grid-column: 1/2;
+      grid-row: 8/9;
+  }
+  .item9 {
+      grid-column: 1/2;
+      grid-row: 9/10;
+  }
+  .item10 {
+      grid-column: 1/2;
+      grid-row: 10/11;
+  }
+}
+
+
+
+        
+
+
